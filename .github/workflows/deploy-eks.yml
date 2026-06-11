@@ -124,7 +124,6 @@ jobs:
 
       # ---------- Ver estado final ----------
       - name: Ver pods y servicios
-        env:
         run: |
           kubectl get pods -n $EKS_NAMESPACE
           kubectl get svc -n $EKS_NAMESPACE
