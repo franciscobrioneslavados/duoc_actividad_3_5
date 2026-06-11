@@ -86,8 +86,6 @@ jobs:
 
       # ---------- Aplicar manifests base ----------
       - name: Aplicar manifests base (namespace, DB, servicios)
-        env:
-          
         run: |
           kubectl apply -f k8s/namespace.yaml
           kubectl apply -f k8s/mysql-secret.yaml -n $EKS_NAMESPACE
@@ -120,7 +118,6 @@ jobs:
 
       # ---------- HPA (si existen los YAML) ----------
       - name: Aplicar HPA (opcional)
-        env:
         run: |
           if [ -f k8s/backend-hpa.yaml ]; then kubectl apply -f k8s/backend-hpa.yaml -n $EKS_NAMESPACE; fi
           if [ -f k8s/frontend-hpa.yaml ]; then kubectl apply -f k8s/frontend-hpa.yaml -n $EKS_NAMESPACE; fi
