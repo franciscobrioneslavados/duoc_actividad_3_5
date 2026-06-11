@@ -10,8 +10,8 @@ env:
   ECR_REPO_FRONTEND: lab-kube-core-frontend-repo
   ECR_REPO_BACKEND: lab-kube-core-backend-repo
   ECR_REPO_DB: lab-kube-core-db-repo
-  AWS_REGION: ${{ vars.AWS_REGION }}
-  EKS_CLUSTER_NAME: ${{ vars.EKS_CLUSTER_NAME }}
+  AWS_REGION: us-east-1
+  EKS_CLUSTER_NAME: lab-kube-core-eks
   EKS_NAMESPACE: tienda
 
 jobs:
