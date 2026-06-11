@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 891377192530.dkr.ecr.us-east-1.amazonaws.com/lab-kube-core-frontend-repo:latest # Colocar uri de tu imagen en ECR
+          image: 891377192530.dkr.ecr.us-east-1.amazonaws.com/lab-kube-core-frontend-repo:e51151c # Colocar uri de tu imagen en ECR
           ports:
             - containerPort: 80
 

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 891377192530.dkr.ecr.us-east-1.amazonaws.com/lab-kube-core-backend-repo:latest # Colocar uri de tu imagen en ECR
+          image: 891377192530.dkr.ecr.us-east-1.amazonaws.com/lab-kube-core-backend-repo:e51151c # Colocar uri de tu imagen en ECR
           ports:
             - containerPort: 3001
           env:
